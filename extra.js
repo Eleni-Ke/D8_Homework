@@ -6,7 +6,7 @@
  [1, 3, 5] ==> [5, 3, 1]
 */
 
-let array = [2, 9, 12, 65, 96];
+let array = [2, 9, 12, 65, 97];
 
 array.reverse();
 console.log(array);
@@ -56,7 +56,7 @@ console.log(onlyEvenNumbers);
 */
 
 for (let i = array.length; i >= 0; i--) {
-    if (i % 2 === 0) {
+    if (array[i] % 2 === 0) {
    array.splice(i, 1);
     }
 }
