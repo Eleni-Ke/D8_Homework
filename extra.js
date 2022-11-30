@@ -6,7 +6,7 @@
  [1, 3, 5] ==> [5, 3, 1]
 */
 
-let array = [2, 9, 12, 65, 97];
+let array = [2, 9, 12, 65, 96];
 
 array.reverse();
 console.log(array);
@@ -31,7 +31,7 @@ console.log(largestElement);
 
 let smallestElement = largestElement;
 
-for (i = 0; i < array.length; i++){
+for (i = 0; i <= array.length; i++){
     if (array[i] < smallestElement) {
         smallestElement = array[i];
     }
@@ -60,7 +60,7 @@ for (let i = array.length; i >= 0; i--) {
    array.splice(i, 1);
     }
 }
-console.log(array);
+console.log("Only odd " + array);
 
 /* EXTRA 6
  Write a piece of code for removing all the vowels from a string.
