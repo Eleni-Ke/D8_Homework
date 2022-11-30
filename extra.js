@@ -67,29 +67,31 @@ console.log(array);
 
 let string = "Blablabla I am a string."
 
-
-
-let stringArray = string.split("");
-console.log(stringArray);
-
-for (i = stringArray.length; i >= 0; i--) {
-    if (([i] === "a") || ([i] === "e") || ([i] === "i") ||([i] === "o") || ([i] === "u")) {
-        stringArray.splice(i, 1);
-    }
-    
-}
-
-console.log(stringArray);
+let noVowels = string.replace(/[aeiou]/gi, '')
+console.log(noVowels);
 
 /* EXTRA 7
  Write a piece of code for increasing all the numerical values in a array by 1.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let anotherArray = [3, 4, 2, 6, 7, 9];
 
+for (let i = 0; i < anotherArray.length; i++) {
+    anotherArray[i] += 1;
+    
+}
+
+console.log(anotherArray);
 /* EXTRA 8 
  Replace all the strings contained in an array with their length.
  es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 
-/* WRITE YOUR ANSWER HERE */
+let stringArray = ["apple", "banana", "tomatoe"];
+
+for (let i = 0; i < stringArray.length; i++) {
+    stringArray[i] = stringArray[i].length;
+    
+}
+
+console.log(stringArray);
