@@ -6,7 +6,7 @@
  [1, 3, 5] ==> [5, 3, 1]
 */
 
-let array = [2, 9, 12];
+let array = [2, 9, 12, 65, 97];
 
 array.reverse();
 console.log(array);
@@ -23,6 +23,7 @@ for (i = 0; i < array.length; i++){
     }
 }
 console.log(largestElement);
+
 
 /* EXTRA 3
  Write a piece of code for getting the minimum numerical value from an array.
